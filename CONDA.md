@@ -1,2 +1,4 @@
 # Initialize conda on powershell
-`conda init powershell`
+```
+conda init powershell
+```
