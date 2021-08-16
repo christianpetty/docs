@@ -1,6 +1,6 @@
 [Official PowerShell Documentation](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
 
-# List of modules
+# List of modules to check out
 * ImportExcel
 
 # Install module
@@ -38,4 +38,9 @@ Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Pe
 # List unique file extensions in a directory recursively
 ```powershell
 Get-ChildItem -Recurse -File | Select-Object DirectoryName, Extension -Unique
+```
+
+# Add module to profile
+```powershell
+$env:PSModulePath += ";C:\Users\Christian\Documents\GitHub\PSTools"
 ```
