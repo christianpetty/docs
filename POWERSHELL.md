@@ -44,3 +44,8 @@ Get-ChildItem -Recurse -File | Select-Object DirectoryName, Extension -Unique
 ```powershell
 $env:PSModulePath += ";C:\Users\Christian\Documents\GitHub\PSTools"
 ```
+
+# Export list of installed programs to txt file
+```powershell
+Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName | Format-Table > <FILENAME>
+```
