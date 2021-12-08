@@ -49,3 +49,9 @@ $env:PSModulePath += ";C:\Users\Christian\Documents\GitHub\PSTools"
 ```powershell
 Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName | Format-Table > <FILENAME>
 ```
+
+# Connect to Exchange Online
+```powershell
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName <USERNAME>
+```
