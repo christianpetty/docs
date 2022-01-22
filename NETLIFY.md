@@ -1,0 +1,1 @@
+```netlify dev -c "hugo server -w" --targetPort 1313```
